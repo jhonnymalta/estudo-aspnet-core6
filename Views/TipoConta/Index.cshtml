@@ -7,6 +7,14 @@
 <h1>Tipos de Contas</h1>
 <h5>O tipo de conta se refere a como podemos agrumar nossas contas.</h5>
 <a asp-action="Criar" class="btn btn-primary mb-3 ">Criar Nova</a>
+<div class="row">
+<div class="col">
+    <h1 class="text-center">Aqui vai algo</h1>
+</div>
+<div class="col">
+
+
+
 <table class="table table-hover">
     <thead>
         <tr>
@@ -20,13 +28,13 @@
         @foreach (var tipoConta in Model)
         {
             <tr>
-                
+                <td>@tipoConta.Id</td>
                 <td>
                      @tipoConta.Nome
                 </td>
                 <td>
-                   <a class="btn btn-primary">Editar</a>
-                   <a class="btn btn-danger">Apagar</a>
+                   <a class="btn btn-primary" asp-action="Editar" asp-route-id="@tipoConta.Id">Editar</a>
+                   <a class="btn btn-danger" asp-action="Deletar" asp-route-id="@tipoConta.Id">Apagar</a>
                 </td>
 
             </tr>
@@ -37,4 +45,5 @@
 </table>
 
 
-
+</div>
+</div>

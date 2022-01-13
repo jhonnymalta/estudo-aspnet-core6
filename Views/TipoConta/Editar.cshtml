@@ -1,0 +1,20 @@
+﻿@model TipoConta
+@{
+    ViewData["Title"] = "Editar";
+}
+<div class="col-4">
+
+
+    <h1>Editar tipo conta: @Model.Nome</h1>
+    <div asp-validation-summary=All class="text-danger"></div>
+    <form asp-controller="TipoConta" asp-action="Editar">
+        <input type="hidden" asp-for="Id"></input>
+        <div class="mb-3">
+            <label asp-for="Nome" class="form-label"></label>
+            <input type="text" asp-for="Nome" placeholder="Nome do tipo de conta" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+
