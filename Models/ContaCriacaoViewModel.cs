@@ -4,6 +4,6 @@ namespace estudo_aspnet_core6.Models
 {
     public class ContaCriacaoViewModel : Contas
     {
-        public IEnumerable<SelectListItem> MyProperty { get; set; }
+        public IEnumerable<SelectListItem> TipoConta { get; set; }
     }
 }

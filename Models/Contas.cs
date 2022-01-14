@@ -16,5 +16,7 @@ namespace estudo_aspnet_core6.Models
 
         [StringLength(maximumLength:150,ErrorMessage ="Utilize no máximo 150 caracteres.")]
         public string Descricao { get; set; }
+
+        public string TipoConta { get; set; }
     }
 }
