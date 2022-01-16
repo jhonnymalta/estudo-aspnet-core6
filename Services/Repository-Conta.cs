@@ -29,10 +29,10 @@ namespace estudo_aspnet_core6.Services
         public async Task<IEnumerable<Contas>> GetAll()
         {
             using var connection = new SqlConnection();
-            return await connection.QueryAsync<Contas>(@"SELECT * FROM TB_Contas CO
+            return await connection.QueryAsync<Contas>(@"SELECT CO.Nome,CO.Balance,TC.Nome FROM TB_Contas CO
                                                             INNER JOIN TB_TipoConta TC
                                                             ON TC.Id = CO.TipoContaId
-                                                            ORDER BY TC.Nome");
+                                                            ORDER BY TC.Nome") ;
 
         }
 
