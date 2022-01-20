@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Calendario";
+}
+<partial name="_submenu" model="SubmenuTransacoes.Calendario"></partial>
+<div>
+    <h1>Calendario</h1>
+    <div id="calendario"></div>
+</div>
+
+
+@section Scripts{
+    <script src="~/lib/fullcalendar/main.min.js"></script>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function(){
+           const calendarioEl = document.getElementById('calendario');
+           const calendario = new FullCalendar.Calendar(calendarioEl,{
+               dayMaxEventRows: 3,
+               initialView: 'dayGridMonth',
+               events:[
+                {
+                    title: '2.500,00',
+                    start: '2022-01-05',
+                    end: '2022-01-05'
+                },
+                {
+                    title: '310,00',
+                    start: '2022-01-05',
+                    end: '2022-01-05',
+                    color: 'red'
+                },
+               ]
+           });
+           calendario.render();
+       })
+    </script>
+}

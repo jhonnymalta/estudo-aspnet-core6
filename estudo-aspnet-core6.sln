@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001-controle-financeiro", "001-controle-financeiro.csproj", "{7D5E2638-4572-47D4-930C-E8FD2DE0BB49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002-Vidle", "..\002-Vidle\002-Vidle.csproj", "{1EB36C0A-BD04-48D1-A7A7-EAEF0CA171A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "002-Vidle", "..\002-Vidle\002-Vidle.csproj", "{1EB36C0A-BD04-48D1-A7A7-EAEF0CA171A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "003-IdentityOverview", "..\IdentityOverview\003-IdentityOverview.csproj", "{8DA5313B-63E5-4049-9DB3-C39DD5ECE54B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1EB36C0A-BD04-48D1-A7A7-EAEF0CA171A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB36C0A-BD04-48D1-A7A7-EAEF0CA171A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB36C0A-BD04-48D1-A7A7-EAEF0CA171A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA5313B-63E5-4049-9DB3-C39DD5ECE54B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA5313B-63E5-4049-9DB3-C39DD5ECE54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA5313B-63E5-4049-9DB3-C39DD5ECE54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA5313B-63E5-4049-9DB3-C39DD5ECE54B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
