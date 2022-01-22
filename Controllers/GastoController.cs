@@ -23,11 +23,10 @@ namespace estudo_aspnet_core6.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Criar(Gasto gasto)
+        public  IActionResult Criar()
         {
 
-            await repository_Gastos.Criar(gasto);
-            return RedirectToAction("Index");
+            return View("Criar","Gasto");
         }
     }
 }

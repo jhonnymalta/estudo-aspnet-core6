@@ -1,0 +1,14 @@
+﻿@model Perfil
+@{
+    ViewData["Title"] = "Perfil";
+}
+
+
+<div>
+    <h2>Perfil</h2>
+    <form>
+        <label asp-for="Nome" class="form-label"></label>
+        <input asp-for="Nome" class="form-control" value="@Model.Nome"/>
+
+    </form>
+</div>
