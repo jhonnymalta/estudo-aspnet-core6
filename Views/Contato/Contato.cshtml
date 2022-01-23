@@ -1,0 +1,19 @@
+﻿@model Contato
+@{
+    ViewData["Title"] = "Contato";
+}
+<form asp-controller="Contato" asp-action="Contato">
+    <div class="mb-3">
+        <label asp-for="Nome" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Nome"></input>
+    </div>
+     <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input type="email" class="form-control" asp-for="Email"></input>
+    </div>
+     <div class="mb-3">
+        <label asp-for="Mensagem" class="form-label"></label>
+       <textarea class="form-control" asp-for="Mensagem" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

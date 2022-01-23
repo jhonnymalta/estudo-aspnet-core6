@@ -23,10 +23,14 @@ namespace estudo_aspnet_core6.Controllers
         }
 
         [HttpPost]
-        public  IActionResult Criar()
+        public  IActionResult NovoGasto(Gasto gasto)
         {
-
-            return View("Criar","Gasto");
+            if (!ModelState.IsValid)
+            {
+                return View(gasto);
+            }
+            return RedirectToAction("Index");
+           
         }
     }
 }

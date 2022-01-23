@@ -1,14 +1,27 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
+    DateTime hoje = DateTime.Now;
 }
 
-<div class="text-center min-vh-100">
-    
-        <div class="col-4">
+<div class="text-center min-vh-100  ">
+    <div class="row h-100 flex justify-content-center align-items-center">
+
+
+        <div class="col col-4 align-middle">
             <img src="~/Images/logofinc.jpg" alt="Foto JotaLandes Perfil" class="rounded-circle" style="height:275px;width:275px" />
             <h1 class="display-4">Financial</h1>
             <p>Controle financeiro com eficiência</p>
 
+
+        </div>
+        <div class="col col-4 align-middle">
+            <span ></span>
+            <h1>@hoje.ToString("dd/MM/yyyy hh:mm:ss tt")</h1>
+            <div>
+                <partial name="_GastoDiario"></partial>
+            </div>
+        </div>
 
     </div>
 </div>

@@ -6,9 +6,23 @@
 
 <div>
     <h2>Perfil</h2>
-    <form>
-        <label asp-for="Nome" class="form-label"></label>
-        <input asp-for="Nome" class="form-control" value="@Model.Nome"/>
+    <form class="col-6">
+        <div class="mb-3">
+            <label asp-for="Nome" class="form-label"></label>
+            <input asp-for="Nome" class="form-control" value="@Model.Nome" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" value="@Model.Email" />
+        </div> 
+        <div class="mb-3">
+            <label asp-for="Telefone" class="form-label"></label>
+            <input asp-for="Telefone" class="form-control" value="@Model.Telefone" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Matricula" class="form-label"></label>
+            <input asp-for="Matricula" class="form-control" value="@Model.Matricula" />
+        </div>
 
     </form>
 </div>

@@ -1,6 +1,25 @@
-﻿@model IEnumerable<Gasto>
+﻿@model Gasto
 @{
     ViewData["Title"] = "Todas os Gastos";
 }
-<h1>Contas</h1>
-<a asp-action="Criar" class="btn btn-primary"> Criar Nova</a>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<form asp-action="NovoGasto" class="col col-3">
+    <div class="mb-3">
+        <label asp-for="Nome" class="form-label"></label>
+        <input class="form-control" asp-for="Nome"></input>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Valor" class="form-label"></label>
+        <input class="form-control" asp-for="Valor"></input>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DiaGasto" class="form-label"></label>
+        <input type="date" class="form-control" asp-for="DiaGasto"></input>
+    </div>
+    <button class="btn btn-secondary">Registrar novo gasto</button>
+
+</form>
+
+<hr class=""></hr>
+<h1>Últimos Gastos</h1>
+<partial name="_NovoGasto"></partial>
